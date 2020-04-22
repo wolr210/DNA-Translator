@@ -8,8 +8,6 @@
  * You are allowed to reuse this code as long as you mention me in the credits.
  */
 
-package main;
-
 import java.io.BufferedReader;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -18,7 +16,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import obj.DNATranslator;
+import DNATranslator;
 
 public class Main {
 
@@ -33,11 +31,11 @@ public class Main {
 		
 		try {
 			
-			reader = new BufferedReader(new FileReader(new File("src\\main\\template_strand.txt")));
-			codingStrandWriter = new BufferedWriter(new FileWriter(new File("src\\main\\coding_strand.txt")));
-			messengerRNAWriter = new BufferedWriter(new FileWriter(new File("src\\main\\messenger_RNA.txt")));
-			aminoAcidWriter = new BufferedWriter(new FileWriter(new File("src\\main\\amino_acids.txt")));
-			proteinsWriter = new BufferedWriter(new FileWriter(new File("src\\main\\proteins.txt")));
+			reader = new BufferedReader(new FileReader(new File("\\template_strand.txt")));
+			codingStrandWriter = new BufferedWriter(new FileWriter(new File("\\coding_strand.txt")));
+			messengerRNAWriter = new BufferedWriter(new FileWriter(new File("\\messenger_RNA.txt")));
+			aminoAcidWriter = new BufferedWriter(new FileWriter(new File("\\amino_acids.txt")));
+			proteinsWriter = new BufferedWriter(new FileWriter(new File("\\proteins.txt")));
 			
 			String nucleotides = reader.readLine();
 			
